@@ -4,7 +4,7 @@ import type { DigestRow, JobStatus, Night, ReadNight, RunLine } from './types.js
 
 const STATUSES: readonly string[] = ['ok', 'retry', 'fail'] satisfies JobStatus[];
 
-function parseLine(line: string): RunLine | null {
+export function parseLine(line: string): RunLine | null {
   let v: unknown;
   try {
     v = JSON.parse(line);
