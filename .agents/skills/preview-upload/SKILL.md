@@ -56,7 +56,7 @@ replaces the page at the same link. Check it: `curl -s <link> | grep -c "<marker
 ## Take down
 
 ```sh
-npx wrangler delete --name <project>
+npx wrangler delete <project>
 ```
 
 ## Gotchas
